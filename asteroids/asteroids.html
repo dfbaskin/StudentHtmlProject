@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RPS Gaming - Asteroids</title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <style>
+        #canvas { border:1px solid black; top:0px; left:0px; }
+        .button { position:absolute; border:1px solid black; }
+        #left-controls { position:absolute; left:1px; bottom:0px; display:none; }
+        #right-controls { position:absolute; right:1px; bottom:0px; display:none; }
+        #up { width:200px; height:100px; bottom:100px;}
+        #left { width:100px; height:100px; bottom:0px;}
+        #right { width:100px; height:100px; bottom:0px; left:100px; }
+        #space { width:200px; height:200px; bottom:0px; right:0px; }
+    </style>
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">RPS Gaming</a>
+        </div>
+        <div class="navbar-collapse collapse">
+        </div><!--/.navbar-collapse -->
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Asteroids!</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div id="game-container">
+                <canvas id="canvas" width="780" height="540"></canvas>
+                <div id="left-controls">
+                    <div id="up" class='button'>THRUST</div>
+                    <div id="left" class='button'>LEFT</div>
+                    <div id="right" class='button'>RIGHT</div>
+                </div>
+                <div id="right-controls">
+                    <div id="space" class='button'>FIRE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Other games are available too!
+    </footer>
+
+</div> <!-- /container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="vector_battle_regular.typeface.js"></script>
+<script src="ipad.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
