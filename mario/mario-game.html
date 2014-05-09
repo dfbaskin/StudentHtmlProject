@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RPS Gaming - Asteroids</title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">RPS Gaming</a>
+        </div>
+        <div class="navbar-collapse collapse">
+        </div><!--/.navbar-collapse -->
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Asteroids!</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <canvas id="canvas" width="640" height="480">
+                <p>Your browser does not support the canvas element.</p>
+            </canvas>
+
+        </div>
+    </div>
+
+    <footer>
+        Other games are available too!
+    </footer>
+
+</div> <!-- /container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- Enjine Includes -->
+<script src="Enjine/core.js"></script>
+<script src="Enjine/gameCanvas.js"></script>
+<script src="Enjine/keyboardInput.js"></script>
+<script src="Enjine/resources.js"></script>
+<script src="Enjine/drawable.js"></script>
+<script src="Enjine/state.js"></script>
+<script src="Enjine/gameTimer.js"></script>
+<script src="Enjine/camera.js"></script>
+<script src="Enjine/drawableManager.js"></script>
+<script src="Enjine/sprite.js"></script>
+<script src="Enjine/spriteFont.js"></script>
+<script src="Enjine/frameSprite.js"></script>
+<script src="Enjine/animatedSprite.js"></script>
+<script src="Enjine/collideable.js"></script>
+<script src="Enjine/application.js"></script>
+
+<!-- Actual game code -->
+<script src="code/setup.js"></script>
+<script src="code/spriteCuts.js"></script>
+<script src="code/level.js"></script>
+<script src="code/backgroundGenerator.js"></script>
+<script src="code/backgroundRenderer.js"></script>
+<script src="code/improvedNoise.js"></script>
+<script src="code/notchSprite.js"></script>
+<script src="code/character.js"></script>
+<script src="code/levelRenderer.js"></script>
+<script src="code/levelGenerator.js"></script>
+<script src="code/spriteTemplate.js"></script>
+<script src="code/enemy.js"></script>
+<script src="code/fireball.js"></script>
+<script src="code/sparkle.js"></script>
+<script src="code/coinAnim.js"></script>
+<script src="code/mushroom.js"></script>
+<script src="code/particle.js"></script>
+<script src="code/fireFlower.js"></script>
+<script src="code/bulletBill.js"></script>
+<script src="code/flowerEnemy.js"></script>
+<script src="code/shell.js"></script>
+
+<script src="code/titleState.js"></script>
+<script src="code/loadingState.js"></script>
+<script src="code/loseState.js"></script>
+<script src="code/winState.js"></script>
+<script src="code/mapState.js"></script>
+<script src="code/levelState.js"></script>
+
+<script src="code/music.js"></script>
+
+<script>$(document).ready(function() { new Enjine.Application().Initialize(new Mario.LoadingState(), 320, 240) });</script>
+
+</body>
+</html>
